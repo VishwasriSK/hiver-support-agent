@@ -1,0 +1,5 @@
+System,Accuracy,Macro_Precision,Macro_Recall,Macro_F1,Top1_Retrieval_Success,Escalation_Rate,Notes
+Trivial baseline,0.25,0.0312,0.125,0.05,N/A,N/A,Always predicts majority class (Delivery & Tracking)
+TF-IDF + Logistic Regression,0.5,0.4293,0.3813,0.3583,N/A,N/A,Simple ML intent classifier trained on 160 golden examples
+Retrieval baseline,0.55,0.6078,0.5292,0.5439,N/A,N/A,kNN cosine similarity on golden reference set (160 examples)
+Final Support Agent,0.5,0.4293,0.3813,0.3583,52.5%,50.0%,End-to-end agent: Intent classifier + 150k retrieval grounding + calibrated escalation (Acc on suggested = 55.0%)

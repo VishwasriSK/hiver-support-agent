@@ -1,0 +1,42 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment & Secrets
+.env
+.env.*
+*.key
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary / Scratch files
+scratch/
+*.tmp
+*.log
+
+# Large Raw Data Files (Keep processed data and evaluation artifacts)
+data/raw/
+*.zip
+*.tar.gz
+
+# Large generated retrieval artifacts
+evaluation/tfidf_matrix.joblib
+evaluation/retrieval_data.csv
+data/processed/pairs.csv
+data/processed/clean_pairs.csv
+
+# Large generated retrieval artifacts
+evaluation/tfidf_matrix.joblib
+evaluation/retrieval_data.csv
+data/processed/pairs.csv
+data/processed/clean_pairs.csv
